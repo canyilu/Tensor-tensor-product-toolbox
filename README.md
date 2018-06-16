@@ -1,3 +1,20 @@
+.. image:: https://badge.fury.io/py/tensorly.svg
+    :target: https://badge.fury.io/py/tensorly
+
+.. image:: https://anaconda.org/tensorly/tensorly/badges/version.svg   
+    :target: https://anaconda.org/tensorly/tensorly
+
+.. image:: https://travis-ci.org/tensorly/tensorly.svg?branch=master
+    :target: https://travis-ci.org/tensorly/tensorly
+
+.. image:: https://coveralls.io/repos/github/tensorly/tensorly/badge.svg?branch=master
+    :target: https://coveralls.io/github/tensorly/tensorly?branch=master
+    
+.. image:: https://badges.gitter.im/tensorly/tensorly.svg
+    :target: https://gitter.im/tensorly/tensorly?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
+
+
+
 ## Tensor-Tensor Product Toolbox
 
 ### Introduction
@@ -13,6 +30,16 @@ The table below gives the list of functions implemented in our toolbox. The deta
 Note that we only focus on 3 way tensor in this toolbox. We will develop the same functions for p-way tensor in the near future. We will also provide the python verion soon.
 
 ![Alt text](https://github.com/canyilu/tproduct/blob/master/tab_tprod_funlist.JPG)
+
+.. code:: python
+
+   import tensorly as tl
+   import numpy as np
+
+
+   tensor = tl.tensor(np.arange(24).reshape((3, 4, 2)))
+   unfolded = tl.unfold(tensor, mode=0)
+   tl.fold(unfolded, mode=0, shape=tensor.shape)
 
 ### Citing
 
