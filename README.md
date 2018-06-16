@@ -4,7 +4,7 @@ Tensors are higher-order extensions of matrices. In recent work <a class="footno
 
 ![Alt text](https://github.com/canyilu/tproduct/blob/master/tsvd.JPG)
 
-The table below gives the list of functions implemented in our toolbox. The detailed definitions of these tensor concepts, operations and tensor factorizations are given at <a href="../tproduct/manual.pdf" class="textlink" target="_blank">https://github.com/canyilu/tproduct/manual.pdf</a>. Note that we only focus on 3 way tensor in this toolbox. We will develop the same functions for p-way tensor in the near future. We will also provide the python verion soon.
+The table below gives the list of functions implemented in our toolbox. The detailed definitions of these tensor concepts, operations and tensor factorizations are given at <a href="../tproduct/blob/master/manual.pdf" class="textlink" target="_blank">https://github.com/canyilu/tproduct/blob/master/manual.pdf</a>. Note that we only focus on 3 way tensor in this toolbox. We will develop the same functions for p-way tensor in the near future. We will also provide the python verion soon.
 
 ![Alt text](https://github.com/canyilu/tproduct/blob/master/tab_tprod_funlist.JPG)
 
