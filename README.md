@@ -32,6 +32,15 @@ test.m
 <tt class="docutils literal"><span class="pre">https://github.com/canyilu/tproduct</span></tt>.</p>
 </div></blockquote>
 
+<div class="highlight-none"><div class="highlight"><pre>
+Canyi Lu, Tensor-Tensor Product Toolbox. Carnegie Mellon University. June, 2018.
+<tt class="docutils literal"><span class="pre">https://github.com/canyilu/tproduct</span></tt>.
+</pre></div>
+
+<div class="highlight-none"><div class="highlight"><pre>
+Canyi Lu, Tensor-Tensor Product Toolbox. Carnegie Mellon University. June, 2018. https://github.com/canyilu/tproduct.
+</pre></div>
+
 <p>The corresponding BiBTeX citation are given below:</p>
 <div class="highlight-none"><div class="highlight"><pre>
 @incollection{tproduct2018lu,
