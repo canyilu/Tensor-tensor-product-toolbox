@@ -16,7 +16,7 @@ The table below gives the list of functions implemented in our toolbox. The deta
 <img src="https://github.com/canyilu/tproduct/blob/master/tab_funs.JPG">
 </p>
 
-Note that we only focus on 3 way tensor in this toolbox. We will develop the same functions for p-way tensor in the near future. We will also provide the python verion soon.
+Note that we only focus on 3 way tensor in this toolbox. We will develop the same functions for p-way tensor in the near future. We will also provide the python version soon.
 
 Simply run the following file to test all the above functions:
 ```matlab
