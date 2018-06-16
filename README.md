@@ -15,7 +15,7 @@ The tensor-tensor product (t-product) <a class="footnote-reference" href="#id2" 
 The table below gives the list of functions implemented in our toolbox. The detailed definitions of these tensor concepts, operations and tensor factorizations are given at <a href="../tproduct/blob/master/manual.pdf" class="textlink" target="_blank">https://github.com/canyilu/tproduct/blob/master/manual.pdf</a>. 
 
 <p align="center"> 
-<img src="https://github.com/canyilu/tproduct/blob/master/tab_tprod_funlist.JPG">
+<img src="https://github.com/canyilu/tproduct/blob/master/tab_funs.JPG">
 </p>
 
 Note that we only focus on 3 way tensor in this toolbox. We will develop the same functions for p-way tensor in the near future. We will also provide the python verion soon.
