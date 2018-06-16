@@ -24,5 +24,14 @@ In citing this toolbox in your papers, please use the following reference:
   year      = {2018},
   note      = {\url{https://github.com/canyilu/tproduct}}
 }
-
 </pre></div>
+  
+  
+# Reference
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>W. Guo, I. Kotsia, and I. Patras. “Tensor Learning for Regression”,
+IEEE Transactions on Image Processing 21.2 (2012), pp. 816–827</td></tr>
+</tbody>
+</table>
