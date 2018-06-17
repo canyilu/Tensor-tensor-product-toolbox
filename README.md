@@ -27,10 +27,10 @@ test.m
 
 <p>In citing this toolbox in your papers, please use the following reference:</p>
 
-<blockquote>
+<blockquote></blockquote>
 <div><p>Canyi Lu, Tensor-Tensor Product Toolbox. Carnegie Mellon University. June, 2018.
 <tt class="docutils literal"><span class="pre">https://github.com/canyilu/tproduct</span></tt>.</p>
-</div></blockquote>
+</div>
 
 <p>The corresponding BiBTeX citation are given below:</p>
 <div class="highlight-none"><div class="highlight"><pre>
