@@ -27,12 +27,9 @@ test.m
 
 <p>In citing this toolbox in your papers, please use the following references:</p>
 
-<div><p>
-<tt class="docutils literal"><span class="pre">Canyi Lu. Tensor-Tensor Product Toolbox. Carnegie Mellon University, June 2018. https://github.com/canyilu/tproduct</span></tt></p>
-</div>
-
 <div class="highlight-none"><div class="highlight"><pre>
 C. Lu. Tensor-Tensor Product Toolbox. Carnegie Mellon University, June 2018. https://github.com/canyilu/tproduct.
+
 
 C. Lu, J. Feng, Y. Chen, W. Liu, Z. Lin, and S. Yan. Tensor robust principal component analysis with a new tensor
 nuclear norm. arXiv preprint arXiv:1804.03728, 2018.
