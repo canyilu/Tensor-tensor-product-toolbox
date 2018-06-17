@@ -10,7 +10,7 @@ The tensor-tensor product (t-product) <a class="footnote-reference" href="#id2" 
 
 ### List of functions
 
-The table below gives the list of functions implemented in our toolbox. The detailed definitions of these tensor concepts, operations and tensor factorizations are given at <a href="../tproduct/blob/master/manual.pdf" class="textlink" target="_blank">https://github.com/canyilu/tproduct/blob/master/manual.pdf</a>. 
+The table below gives the list of functions implemented in our toolbox. The detailed definitions of these tensor concepts, operations and tensor factorizations are given at <a href="../publications/2018-software-tproduct.pdf" class="textlink" target="_blank">https://canyilu.github.io/publications/2018-software-tproduct.pdf</a>. 
 
 <p align="center"> 
 <img src="https://github.com/canyilu/tproduct/blob/master/tab_funs.JPG">
