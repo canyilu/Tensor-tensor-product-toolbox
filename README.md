@@ -34,12 +34,12 @@ test.m
 <p>The corresponding BiBTeX citation are given below:</p>
 <div class="highlight-none"><div class="highlight"><pre>
 @Manual{lu2018tproduct,
-  author    = {Lu, Canyi},
-  title     = {Tensor-Tensor Product Toolbox},
-  publisher = {Carnegie Mellon University},
-  month     = {June},
-  year      = {2018},
-  note      = {\url{https://github.com/canyilu/tproduct}}
+  author       = {Lu, Canyi},
+  title        = {Tensor-Tensor Product Toolbox},
+  organization = {Carnegie Mellon University},
+  month        = {June},
+  year         = {2018},
+  note         = {\url{https://github.com/canyilu/tproduct}}
 }
 </pre></div>
   
