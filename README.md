@@ -43,10 +43,10 @@ nuclear norm. arXiv preprint arXiv:1804.03728, 2018.</pre></div>
   note         = {\url{https://github.com/canyilu/tproduct}}
 }
 @article{lu2018tensor,
-  author = {Lu, Canyi and Feng, Jiashi and Chen, Yudong and Liu, Wei and Lin, Zhouchen and Yan, Shuicheng},
-  title = {Tensor Robust Principal Component Analysis with A New Tensor Nuclear Norm},
-  journal = {arXiv preprint arXiv:1804.03728},
-  year = {2018}
+  author       = {Lu, Canyi and Feng, Jiashi and Chen, Yudong and Liu, Wei and Lin, Zhouchen and Yan, Shuicheng},
+  title        = {Tensor Robust Principal Component Analysis with A New Tensor Nuclear Norm},
+  journal      = {arXiv preprint arXiv:1804.03728},
+  year         = {2018}
 }</pre></div>
   
 ### Related Toolboxes
