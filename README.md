@@ -44,7 +44,7 @@ test.m
 </pre></div>
   
 ### Related Toolboxes
-The t-product toolbox has been applied in our works about tensor roubst PCA <a class="footnote-reference" href="#id2" id="id1">[3]</a>, low-rank tensor completion and low-rank tensor recovery from Gaussian measurements <a class="footnote-reference" href="#id2" id="id1">[4]</a>.
+The t-product toolbox has been applied in our works about tensor roubst PCA <a class="footnote-reference" href="#id2" id="id1">[2,3]</a>, low-rank tensor completion and low-rank tensor recovery from Gaussian measurements <a class="footnote-reference" href="#id2" id="id1">[4]</a>.
 <ul>
   <li> <a href="https://github.com/canyilu/Tensor-Robust-Principal-Component-Analysis-TRPCA" class="textlink">Tensor robust principal component analysis </a></li>       
 	<li> <a href="https://github.com/canyilu/tensor-completion-tensor-recovery" class="textlink">Low tubal tensor completion and tensor recovery from Gaussian measurements </a></li>
