@@ -33,7 +33,7 @@ test.m
 
 <p>The corresponding BiBTeX citation are given below:</p>
 <div class="highlight-none"><div class="highlight"><pre>
-@incollection{tproduct2018lu,
+@Manual{tproduct2018lu,
   author    = {Lu, Canyi},
   title     = {Tensor-Tensor Product Toolbox},
   publisher = {Carnegie Mellon University},
