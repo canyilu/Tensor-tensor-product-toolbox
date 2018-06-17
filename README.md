@@ -25,7 +25,7 @@ test.m
 
 ### Citing
 
-<p>In citing this toolbox in your papers, please use the following reference:</p>
+<p>In citing this toolbox in your papers, please use the following references:</p>
 
 <div><p>
 <tt class="docutils literal"><span class="pre">Canyi Lu. Tensor-Tensor Product Toolbox. Carnegie Mellon University, June 2018. https://github.com/canyilu/tproduct</span></tt></p>
@@ -34,19 +34,26 @@ test.m
 <div class="highlight-none"><div class="highlight"><pre>
 C. Lu. Tensor-Tensor Product Toolbox. Carnegie Mellon University, June 2018. https://github.com/canyilu/tproduct.
 
-C. Lu, J. Feng, Y. Chen, W. Liu, Z. Lin, and S. Yan. Tensor robust principal component analysis with a new
-tensor nuclear norm. arXiv preprint arXiv:1804.03728, 2018.
+C. Lu, J. Feng, Y. Chen, W. Liu, Z. Lin, and S. Yan. Tensor robust principal component analysis with a new tensor
+nuclear norm. arXiv preprint arXiv:1804.03728, 2018.
 </pre></div>
 	
-<p>The corresponding BiBTeX citation are given below:</p>
+<p>The corresponding BiBTeX citations are given below:</p>
 <div class="highlight-none"><div class="highlight"><pre>
-@Manual{lu2018tproduct,
+@manual{lu2018tproduct,
   author       = {Lu, Canyi},
   title        = {Tensor-Tensor Product Toolbox},
   organization = {Carnegie Mellon University},
   month        = {June},
   year         = {2018},
   note         = {\url{https://github.com/canyilu/tproduct}}
+}
+
+@article{lu2018tensor,
+  author = {Lu, Canyi and Feng, Jiashi and Chen, Yudong and Liu, Wei and Lin, Zhouchen and Yan, Shuicheng},
+  title = {Tensor Robust Principal Component Analysis with A New Tensor Nuclear Norm},
+  journal = {arXiv preprint arXiv:1804.03728},
+  year = {2018}
 }
 </pre></div>
   
