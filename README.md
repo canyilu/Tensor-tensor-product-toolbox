@@ -30,7 +30,8 @@ test.m
 <div class="highlight-none"><div class="highlight"><pre>
 C. Lu. Tensor-Tensor Product Toolbox. Carnegie Mellon University, June 2018. https://github.com/canyilu/tproduct.
 C. Lu, J. Feng, Y. Chen, W. Liu, Z. Lin, and S. Yan. Tensor robust principal component analysis with a new tensor
-nuclear norm. arXiv preprint arXiv:1804.03728, 2018.</pre></div>
+nuclear norm. arXiv preprint arXiv:1804.03728, 2018.
+</pre></div>
 
 <p>The corresponding BiBTeX citations are given below:</p>
 <div class="highlight-none"><div class="highlight"><pre>
@@ -47,13 +48,14 @@ nuclear norm. arXiv preprint arXiv:1804.03728, 2018.</pre></div>
   title        = {Tensor Robust Principal Component Analysis with A New Tensor Nuclear Norm},
   journal      = {arXiv preprint arXiv:1804.03728},
   year         = {2018}
-}</pre></div>
+}
+</pre></div>
   
 ### Related Toolboxes
 The t-product toolbox has been applied in our works about tensor roubst PCA <a class="footnote-reference" href="#id2" id="id1">[2,3]</a>, low-rank tensor completion and low-rank tensor recovery from Gaussian measurements <a class="footnote-reference" href="#id2" id="id1">[4]</a>.
 <ul>
   <li> <a href="https://github.com/canyilu/Tensor-Robust-Principal-Component-Analysis-TRPCA" class="textlink">Tensor robust principal component analysis </a></li>       
-	<li> <a href="https://github.com/canyilu/tensor-completion-tensor-recovery" class="textlink">Low tubal tensor completion and tensor recovery from Gaussian measurements </a></li>
+  <li> <a href="https://github.com/canyilu/tensor-completion-tensor-recovery" class="textlink">Low tubal tensor completion and tensor recovery from Gaussian measurements </a></li>
 </ul>
 
 ### References
