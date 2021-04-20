@@ -46,8 +46,8 @@ nuclear norm. arXiv preprint arXiv:1804.03728, 2018.
 @article{lu2018tensor,
   author       = {Lu, Canyi and Feng, Jiashi and Chen, Yudong and Liu, Wei and Lin, Zhouchen and Yan, Shuicheng},
   title        = {Tensor Robust Principal Component Analysis with A New Tensor Nuclear Norm},
-  journal      = {arXiv preprint arXiv:1804.03728},
-  year         = {2018}
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year         = {2019}
 }
 </pre></div>
   
@@ -64,7 +64,7 @@ The t-product toolbox has been applied in our works about tensor roubst PCA <a c
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>M. E. Kilmer and C. D. Martin. Factorization strategies for third-order tensors. Linear Algebra and its Applications. 435(3):641–658, 2011.</td></tr>
-<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>C. Lu, J. Feng, Y. Chen, W. Liu, Z. Lin, and S. Yan. Tensor robust principal component analysis with a new tensor nuclear norm. arXiv preprint arXiv:1804.03728, 2018.</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>C. Lu, J. Feng, Y. Chen, W. Liu, Z. Lin, and S. Yan. Tensor robust principal component analysis with a new tensor nuclear norm. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2019.</td></tr>
 <tr><td class="label"><a class="fn-backref" href="#id2">[3]</a></td><td>C. Lu, J. Feng, Y. Chen, W. Liu, Z. Lin, and S. Yan. Tensor robust principal component analysis: Exact recovery of corrupted low-rank tensors via convex optimization. In IEEE International Conference on Computer Vision and Pattern Recognition, 2016.</td></tr>
 <tr><td class="label"><a class="fn-backref" href="#id2">[4]</a></td><td>C. Lu, J. Feng, Z. Lin, and S. Yan. Exact low tubal rank tensor recovery from Gaussian measurements. In International Joint Conference on Artificial Intelligence, 2018.</td></tr>
 <tr><td class="label"><a class="fn-backref" href="#id2">[5]</a></td><td>C. Lu, J. Feng, S. Yan, Z. Lin. A Unified Alternating Direction Method of Multipliers by Majorization Minimization. IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 40, pp. 527-541, 2018.
