@@ -1,4 +1,4 @@
-function trank = tubalrank(X,tol)
+function trank = tubalrank(X)
 
 % The tensor tubal rank of a 3 way tensor
 %
@@ -6,6 +6,7 @@ function trank = tubalrank(X,tol)
 % trank -    tensor tubal rank of X
 %
 % version 2.0 - 14/06/2018
+% version 2.1 - 28/04/2021 a more accurate version
 %
 % Written by Canyi Lu (canyilu@gmail.com)
 %
@@ -16,7 +17,7 @@ function trank = tubalrank(X,tol)
 %
 % Canyi Lu, Jiashi Feng, Yudong Chen, Wei Liu, Zhouchen Lin and Shuicheng
 % Yan, Tensor Robust Principal Component Analysis with A New Tensor Nuclear
-% Norm, arXiv preprint arXiv:1804.03728, 2018
+% Norm, TPAMI, 2019
 %
 
 X = fft(X,[],3);
@@ -35,9 +36,6 @@ if mod(n3,2) == 0
     i = halfn3+1;
     s = s + svd(X(:,:,i),'econ');
 end
-s = s/n3;
-
-if nargin==1
-   tol = max(n1,n2) * eps(max(s));
-end
+s = s/n3^2;
+tol = max(n1,n2)*eps(max(s));
 trank = sum(s > tol);

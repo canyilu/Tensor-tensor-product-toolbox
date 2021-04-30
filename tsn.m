@@ -3,9 +3,10 @@ function tsn = tsn(X)
 % Tensor spectral norm of a 3 way tensor
 %
 % X     - n1*n2*n3 tensor
-% tsn    - tensor spectral norm
+% tsn   - tensor spectral norm
 %
 % version 1.0 - 14/06/2018
+% version 1.1 - 28/04/2021 a more efficient version
 %
 % Written by Canyi Lu (canyilu@gmail.com)
 % 
@@ -16,23 +17,12 @@ function tsn = tsn(X)
 %
 % Canyi Lu, Jiashi Feng, Yudong Chen, Wei Liu, Zhouchen Lin and Shuicheng
 % Yan, Tensor Robust Principal Component Analysis with A New Tensor Nuclear
-% Norm, arXiv preprint arXiv:1804.03728, 2018
+% Norm, TPAMI, 2019
 %
 
-n3 = size(X,3);
 X = fft(X,[],3);
-
-% i=1
-tsn = norm(X(:,:,1),2);
-
-% i=2,...,halfn3
-halfn3 = round(n3/2);
-for i = 2 : halfn3
+tsn = 0;
+for i = 1 : ceil((size(X,3)+1)/2)
     tsn = max(tsn,norm(X(:,:,i),2));
 end
 
-% if n3 is even
-if mod(n3,2) == 0
-    i = halfn3+1;
-    tsn = max(tsn,norm(X(:,:,i),2));
-end

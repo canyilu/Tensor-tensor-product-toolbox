@@ -9,6 +9,7 @@ function [Q,R] = tqr(X,opt)
 %   slices of R are computed. If n1<=n2, this is the same as [Q,R] = tqr(X).
 %
 % version 1.0 - 14/06/2018
+% version 1.1 - 28/04/2021
 %
 % Written by Canyi Lu (canyilu@gmail.com)
 %
@@ -19,7 +20,7 @@ function [Q,R] = tqr(X,opt)
 %
 % Canyi Lu, Jiashi Feng, Yudong Chen, Wei Liu, Zhouchen Lin and Shuicheng
 % Yan, Tensor Robust Principal Component Analysis with A New Tensor Nuclear
-% Norm, arXiv preprint arXiv:1804.03728, 2018
+% Norm, TPAMI, 2019
 %
 
 [n1,n2,n3] = size(X);
@@ -27,38 +28,25 @@ X = fft(X,[],3);
 
 if n1>n2 && exist('opt', 'var') && strcmp(opt,'econ') == 1    
     Q = zeros(n1,n2,n3);
-    R = zeros(n2,n2,n3);    
-    % first frontal slice
-    [Q(:,:,1),R(:,:,1)] = qr(X(:,:,1),0);
-    % i=2,...,halfn3
-    halfn3 = round(n3/2);
-    for i = 2 : halfn3
-        [Q(:,:,i),R(:,:,i)] = qr(X(:,:,i),0);
-        Q(:,:,n3+2-i) = conj(Q(:,:,i));
-        R(:,:,n3+2-i) = conj(R(:,:,i));
-    end
-    % if n3 is even
-    if mod(n3,2) == 0
-        i = halfn3+1;
+    R = zeros(n2,n2,n3);
+    halfn3 = ceil((n3+1)/2);
+    for i = 1 : halfn3
         [Q(:,:,i),R(:,:,i)] = qr(X(:,:,i),0);
     end
-    
+    for i = halfn3+1 : n3
+        Q(:,:,i) = conj(Q(:,:,n3+2-i));
+        R(:,:,i) = conj(R(:,:,n3+2-i));
+    end
 else    
     Q = zeros(n1,n1,n3);
     R = zeros(n1,n2,n3);
-    % first frontal slice
-    [Q(:,:,1),R(:,:,1)] = qr(X(:,:,1));
-    % i=2,...,halfn3
-    halfn3 = round(n3/2);
-    for i = 2 : halfn3
+    halfn3 = ceil((n3+1)/2);
+    for i = 1 : halfn3
         [Q(:,:,i),R(:,:,i)] = qr(X(:,:,i));
-        Q(:,:,n3+2-i) = conj(Q(:,:,i));
-        R(:,:,n3+2-i) = conj(R(:,:,i));
     end
-    % if n3 is even
-    if mod(n3,2) == 0
-        i = halfn3+1;
-        [Q(:,:,i),R(:,:,i)] = qr(X(:,:,i));
+    for i = halfn3+1 : n3
+        Q(:,:,i) = conj(Q(:,:,n3+2-i));
+        R(:,:,i) = conj(R(:,:,n3+2-i));
     end
 end
 

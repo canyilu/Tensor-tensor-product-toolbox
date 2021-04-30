@@ -1,13 +1,13 @@
-function invX = tinv(X)
+function X = tinv(X)
 
 % tinv(X) is the inverse of the tensor X of size n*n*n3.
 %   A warning message is printed if X is badly scaled or
 %   nearly singular.
 %
 % version 1.0 - 14/06/2018
+% version 1.1 - 28/04/2021
 %
 % Written by Canyi Lu (canyilu@gmail.com)
-% 
 %
 % References: 
 % Canyi Lu, Tensor-Tensor Product Toolbox. Carnegie Mellon University. 
@@ -15,7 +15,7 @@ function invX = tinv(X)
 %
 % Canyi Lu, Jiashi Feng, Yudong Chen, Wei Liu, Zhouchen Lin and Shuicheng
 % Yan, Tensor Robust Principal Component Analysis with A New Tensor Nuclear
-% Norm, arXiv preprint arXiv:1804.03728, 2018
+% Norm, TPAMI, 2019
 %
 
 [n1,n2,n3] = size(X);
@@ -24,20 +24,13 @@ if n1 ~= n2
 end
 
 X = fft(X,[],3);
-invX = zeros(n1,n2,n3);
 I = eye(n1);
-% first frontal slice
-invX(:,:,1) = X(:,:,1)\I;
-% i=2,...,halfn3
-halfn3 = round(n3/2);
-for i = 2 : halfn3
-    invX(:,:,i) = X(:,:,i)\I;
-    invX(:,:,n3+2-i) = conj(invX(:,:,i));
+halfn3 = ceil((n3+1)/2);
+for i = 1 : halfn3
+    X(:,:,i) = X(:,:,i)\I;
 end
-% if n3 is even
-if mod(n3,2) == 0
-    i = halfn3+1;
-    invX(:,:,i) = X(:,:,i)\I;
+for i = halfn3+1 : n3
+    X(:,:,i) = conj(X(:,:,n3+2-i));
 end
-invX = ifft(invX,[],3);
-
+X = ifft(X,[],3);
+    

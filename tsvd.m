@@ -26,8 +26,8 @@ function [U,S,V] = tsvd(X,opt)
 %
 % version 1.0 - 18/06/2016
 % version 2.0 - 09/10/2017 a more efficient version
-% version 2.1 - 13/06/2018 add option as an new input parameter
-% 
+% version 2.1 - 13/06/2018 add a new input parameter option
+% version 2.2 - 28/04/2021
 %
 % Written by Canyi Lu (canyilu@gmail.com)
 % 
@@ -38,7 +38,7 @@ function [U,S,V] = tsvd(X,opt)
 %
 % Canyi Lu, Jiashi Feng, Yudong Chen, Wei Liu, Zhouchen Lin and Shuicheng
 % Yan, Tensor Robust Principal Component Analysis with A New Tensor Nuclear
-% Norm, arXiv preprint arXiv:1804.03728, 2018
+% Norm, TPAMI, 2019
 %
 
 if ~exist('opt', 'var')
@@ -52,25 +52,19 @@ if strcmp(opt,'skinny') == 1 || strcmp(opt,'econ') == 1
     U = zeros(n1,min12,n3);
     S = zeros(min12,min12,n3);
     V = zeros(n2,min12,n3);
-        
-    % i=1 
-    [U(:,:,1),S(:,:,1),V(:,:,1)] = svd(X(:,:,1),'econ');
-    % i=2,...,halfn3
-    halfn3 = round(n3/2);
-    for i = 2 : halfn3
+    
+    halfn3 = ceil((n3+1)/2);
+    for i = 1 : halfn3
         [U(:,:,i),S(:,:,i),V(:,:,i)] = svd(X(:,:,i),'econ');
-        U(:,:,n3+2-i) = conj(U(:,:,i));
-        V(:,:,n3+2-i) = conj(V(:,:,i));
-        S(:,:,n3+2-i) = S(:,:,i);
-    end    
-    % if n3 is even
-    if mod(n3,2) == 0
-        i = halfn3+1;
-        [U(:,:,i),S(:,:,i),V(:,:,i)] = svd(X(:,:,i),'econ');
+    end
+    for i = halfn3+1 : n3
+        U(:,:,i) = conj(U(:,:,n3+2-i));
+        V(:,:,i) = conj(V(:,:,n3+2-i));
+        S(:,:,i) = S(:,:,n3+2-i);
     end
     
     if strcmp(opt,'skinny') == 1
-        s1 = diag(sum(S,3))/n3;
+        s1 = diag(sum(S,3))/n3^2;
         tol = max(n1,n2)*eps(max(s1));
         trank = sum(s1 > tol); % tensor tubal rank
         U = U(:,1:trank,:);
@@ -82,21 +76,15 @@ elseif strcmp(opt,'full') == 1
     U = zeros(n1,n1,n3);
     S = zeros(n1,n2,n3);
     V = zeros(n2,n2,n3);
-        
-    % i=1 
-    [U(:,:,1),S(:,:,1),V(:,:,1)] = svd(X(:,:,1));    
-    % i=2,...,halfn3
-    halfn3 = round(n3/2);
-    for i = 2 : halfn3
-        [U(:,:,i),S(:,:,i),V(:,:,i)] = svd(X(:,:,i));       
-        U(:,:,n3+2-i) = conj(U(:,:,i));
-        V(:,:,n3+2-i) = conj(V(:,:,i));
-        S(:,:,n3+2-i) = S(:,:,i);
-    end
-    % if n3 is even
-    if mod(n3,2) == 0
-        i = halfn3+1;
+    
+    halfn3 = ceil((n3+1)/2);
+    for i = 1 : halfn3
         [U(:,:,i),S(:,:,i),V(:,:,i)] = svd(X(:,:,i));
+    end
+    for i = halfn3+1 : n3
+        U(:,:,i) = conj(U(:,:,n3+2-i));
+        V(:,:,i) = conj(V(:,:,n3+2-i));
+        S(:,:,i) = S(:,:,n3+2-i);
     end
 end
 
