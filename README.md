@@ -5,7 +5,7 @@
 The tensor-tensor product (t-product) <a class="footnote-reference" href="#id2" id="id1">[1]</a> is a natural generalization of matrix multiplication. Based on t-product, many operations on matrix can be extended to tensor cases, including tensor SVD (see an illustration in the figure below), tensor spectral norm, tensor nuclear norm <a class="footnote-reference" href="#id2" id="id1">[2]</a> and many others. The linear algebraic structure of tensors are similar to the matrix cases. We develop a Matlab toolbox to implement several basic operations on tensors based on t-product.
 
 <p align="center"> 
-<img src="https://github.com/canyilu/tproduct/blob/master/tsvd.JPG">
+<img src="https://github.com/canyilu/tproduct/blob/master/doc/figure_tsvd.JPG">
 </p>
 
 ### List of Functions
@@ -13,7 +13,7 @@ The tensor-tensor product (t-product) <a class="footnote-reference" href="#id2" 
 The table below gives the list of functions implemented in our toolbox. The detailed definitions of these tensor concepts, operations and tensor factorizations are given at <a href="../publications/2018-software-tproduct.pdf" class="textlink" target="_blank">https://canyilu.github.io/publications/2018-software-tproduct.pdf</a>. 
 
 <p align="center"> 
-<img src="https://github.com/canyilu/tproduct/blob/master/tab_funs.JPG">
+<img src="https://github.com/canyilu/tproduct/blob/master/doc/figure_functions_tproduct_1.0.JPG">
 </p>
 
 Note that we only focus on 3 way tensor in this toolbox. We will develop the same functions for p-way tensor in the near future. We will also provide the python version soon.
