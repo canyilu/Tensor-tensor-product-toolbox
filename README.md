@@ -35,6 +35,7 @@ test.m
 C. Lu. Tensor-Tensor Product Toolbox. Carnegie Mellon University, June 2018. https://github.com/canyilu/tproduct.
 C. Lu, J. Feng, Y. Chen, W. Liu, Z. Lin, and S. Yan. Tensor robust principal component analysis with a new tensor
 nuclear norm. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2019.
+C. Lu, X. Peng, and Y. Wei. Low-Rank Tensor Completion With a New Tensor Nuclear Norm Induced by Invertible Linear Transforms. IEEE International Conference on Computer Vision and Pattern Recognition (CVPR), 2019
 </pre></div>
 
 <p>The corresponding BiBTeX citations are given below:</p>
@@ -53,13 +54,20 @@ nuclear norm. IEEE Transactions on Pattern Analysis and Machine Intelligence, 20
   journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year         = {2019}
 }
+@inproceedings{lu2018tensor,
+  author       = {Lu, Canyi and Peng, Xi and Wei, Yunchao},
+  title        = {Low-Rank Tensor Completion With a New Tensor Nuclear Norm Induced by Invertible Linear Transforms},
+  journal      = {CVPR},
+  year         = {2019}
+}
 </pre></div>
   
 ### Related Toolboxes
-The t-product toolbox has been applied in our works about tensor roubst PCA <a class="footnote-reference" href="#id2" id="id1">[3,4]</a>, low-rank tensor completion and low-rank tensor recovery from Gaussian measurements <a class="footnote-reference" href="#id2" id="id1">[5]</a>. Some more models are included in LibADMM toolbox <a class="footnote-reference" href="#id2" id="id1">[8]</a>.
+The t-product toolbox has been applied in our works about tensor roubst PCA <a class="footnote-reference" href="#id2" id="id1">[3,4]</a>, low-rank tensor completion and low-rank tensor recovery from Gaussian measurements <a class="footnote-reference" href="#id2" id="id1">[5]</a>. The t-product under linear transform has also been applied in tensor completion <a class="footnote-reference" href="#id2" id="id1">[6]</a> and tensor robust PCA <a class="footnote-reference" href="#id2" id="id1">[7]</a>. Some more models are included in LibADMM toolbox <a class="footnote-reference" href="#id2" id="id1">[8]</a>.
 <ul>
   <li> <a href="https://github.com/canyilu/Tensor-Robust-Principal-Component-Analysis-TRPCA" class="textlink">Tensor robust principal component analysis </a></li>       
   <li> <a href="https://github.com/canyilu/tensor-completion-tensor-recovery" class="textlink">Low tubal tensor completion and tensor recovery from Gaussian measurements </a></li>
+  <li> <a href="https://github.com/canyilu/Tensor-robust-PCA-and-tensor-completion-under-linear-transform" class="textlink">Tensor robust PCA and tensor completion based on tensor nuclear norm under linear transform</a></li>
   <li> <a href="https://github.com/canyilu/LibADMM" class="textlink">A Library of ADMM for Sparse and Low-rank Optimization </a></li>
 </ul>
 
