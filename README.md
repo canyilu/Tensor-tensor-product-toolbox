@@ -54,7 +54,7 @@ C. Lu, X. Peng, and Y. Wei. Low-Rank Tensor Completion With a New Tensor Nuclear
   journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year         = {2019}
 }
-@inproceedings{lu2018tensor,
+@inproceedings{lu2019tensor,
   author       = {Lu, Canyi and Peng, Xi and Wei, Yunchao},
   title        = {Low-Rank Tensor Completion With a New Tensor Nuclear Norm Induced by Invertible Linear Transforms},
   journal      = {CVPR},
