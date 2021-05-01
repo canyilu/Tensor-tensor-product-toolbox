@@ -61,7 +61,12 @@ C. Lu, X. Peng, and Y. Wei. Low-Rank Tensor Completion With a New Tensor Nuclear
   year         = {2019}
 }
 </pre></div>
-  
+
+### Version History
+- Version 1.0 was released on June, 2018. It implements the functions of t-product and related concepts under fast Fourier transform.
+- Version 2.0 was released on April, 2021. It implements the functions of t-product and related concepts under general invertible linear transform. The fast Fourier transform is the default transform. 
+
+
 ### Related Toolboxes
 The t-product toolbox has been applied in our works about tensor roubst PCA <a class="footnote-reference" href="#id2" id="id1">[3,4]</a>, low-rank tensor completion and low-rank tensor recovery from Gaussian measurements <a class="footnote-reference" href="#id2" id="id1">[5]</a>. The t-product under linear transform has also been applied in tensor completion <a class="footnote-reference" href="#id2" id="id1">[6]</a> and tensor robust PCA <a class="footnote-reference" href="#id2" id="id1">[7]</a>. Some more models are included in LibADMM toolbox <a class="footnote-reference" href="#id2" id="id1">[8]</a>.
 <ul>
