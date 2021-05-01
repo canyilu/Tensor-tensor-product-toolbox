@@ -62,9 +62,14 @@ C. Lu, X. Peng, and Y. Wei. Low-Rank Tensor Completion With a New Tensor Nuclear
 }
 </pre></div>
 
+
 ### Version History
 - Version 1.0 was released on June, 2018. It implements the functions of t-product and related concepts under fast Fourier transform.
-- Version 2.0 was released on April, 2021. It implements the functions of t-product and related concepts under general invertible linear transform. The fast Fourier transform is the default transform. 
+- Version 2.0 was released on April, 2021. It implements the functions of t-product and related concepts under general invertible linear transform. The fast Fourier transform is the default transform.
+  + Most functions are direct generalization from the fast Fourier transform to general linear transform, e.g., ```tprod```, ```tran```, ```teye```, ```tinv```, ```tsvd```, ```tubalrank```, ```tsn```, ```tnn```, ```prox_tnn``` and ```tqr```.
+  + Some functions are new (not included in Version 1.0), e.g., ```basis_column```, ```basis_tube``` and ```unit_eijk```.
+  + Some functions in Version 1.0 are updated, e.g., the setting of parameter tol in ```tubalrank``` and ```tsvd``` is updated, and ```tprod```, ```tsn```, ```tinv``` and ```tqr``` are updated.
+
 
 
 ### Related Toolboxes
