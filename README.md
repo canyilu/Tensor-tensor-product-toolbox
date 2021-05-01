@@ -73,7 +73,7 @@ C. Lu, X. Peng, and Y. Wei. Low-Rank Tensor Completion With a New Tensor Nuclear
 
 
 ### Related Toolboxes
-The t-product toolbox has been applied in our works about tensor roubst PCA <a class="footnote-reference" href="#id2" id="id1">[3,4]</a>, low-rank tensor completion and low-rank tensor recovery from Gaussian measurements <a class="footnote-reference" href="#id2" id="id1">[5]</a>. The t-product under linear transform has also been applied in tensor completion <a class="footnote-reference" href="#id2" id="id1">[6]</a> and tensor robust PCA <a class="footnote-reference" href="#id2" id="id1">[7]</a>. Some more models are included in LibADMM toolbox <a class="footnote-reference" href="#id2" id="id1">[8]</a>.
+The t-product toolbox has been applied in our works for tensor roubst PCA <a class="footnote-reference" href="#id2" id="id1">[3,4]</a>, low-rank tensor completion and low-rank tensor recovery from Gaussian measurements <a class="footnote-reference" href="#id2" id="id1">[5]</a>. The t-product under linear transform has also been applied in tensor completion <a class="footnote-reference" href="#id2" id="id1">[6]</a> and tensor robust PCA <a class="footnote-reference" href="#id2" id="id1">[7]</a>. Some more models are included in LibADMM toolbox <a class="footnote-reference" href="#id2" id="id1">[8]</a>.
 <ul>
   <li> <a href="https://github.com/canyilu/Tensor-Robust-Principal-Component-Analysis-TRPCA" class="textlink">Tensor robust principal component analysis </a></li>       
   <li> <a href="https://github.com/canyilu/tensor-completion-tensor-recovery" class="textlink">Low tubal tensor completion and tensor recovery from Gaussian measurements </a></li>
